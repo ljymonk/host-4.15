@@ -63,10 +63,6 @@ obj-y				+= char/
 obj-y				+= gim-api/
 obj-y				+= sriov_drv/
 
-#please create a software link to the real kalloc of fb-scan in this folder
-#before you build the host kernel
-obj-y				+= kalloc/
-
 # iommu/ comes before gpu as gpu are using iommu controllers
 obj-$(CONFIG_IOMMU_SUPPORT)	+= iommu/
 
